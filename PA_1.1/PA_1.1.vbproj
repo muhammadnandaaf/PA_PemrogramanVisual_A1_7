@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B102D5BD-4DA3-4950-94FD-1C1554A02CD7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PA_1._1.My.MyApplication</StartupObject>
+    <RootNamespace>PA_1._1</RootNamespace>
+    <AssemblyName>PA_1.1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PA_1.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PA_1.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data">
+      <HintPath>..\..\..\..\..\..\..\Programming\MySqlConnector\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDataKue.Designer.vb">
+      <DependentUpon>AddDataKue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddDataKue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminOrder.Designer.vb">
+      <DependentUpon>FormAdminOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBayarUser.Designer.vb">
+      <DependentUpon>FormBayarUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBayarUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditDataKue.Designer.vb">
+      <DependentUpon>FormEditDataKue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditDataKue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditProfile.Designer.vb">
+      <DependentUpon>FormEditProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesanan.Designer.vb">
+      <DependentUpon>FormPesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfile.Designer.vb">
+      <DependentUpon>FormProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTampilKue.Designer.vb">
+      <DependentUpon>FormTampilKue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTampilKue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksiAdmin.Designer.vb">
+      <DependentUpon>FormTransaksiAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksiAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksiUser.Designer.vb">
+      <DependentUpon>FormTransaksiUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksiUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserKue.Designer.vb">
+      <DependentUpon>FormUserKue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserKue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readDataKue.Designer.vb">
+      <DependentUpon>readDataKue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="readDataKue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userForm.Designer.vb">
+      <DependentUpon>userForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForm.Designer.vb">
+      <DependentUpon>adminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="regisForm.Designer.vb">
+      <DependentUpon>regisForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="regisForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.vb">
+      <DependentUpon>loginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddDataKue.resx">
+      <DependentUpon>AddDataKue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminOrder.resx">
+      <DependentUpon>FormAdminOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBayarUser.resx">
+      <DependentUpon>FormBayarUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDataKue.resx">
+      <DependentUpon>FormEditDataKue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditProfile.resx">
+      <DependentUpon>FormEditProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesanan.resx">
+      <DependentUpon>FormPesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfile.resx">
+      <DependentUpon>FormProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTampilKue.resx">
+      <DependentUpon>FormTampilKue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksiAdmin.resx">
+      <DependentUpon>FormTransaksiAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksiUser.resx">
+      <DependentUpon>FormTransaksiUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserKue.resx">
+      <DependentUpon>FormUserKue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readDataKue.resx">
+      <DependentUpon>readDataKue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userForm.resx">
+      <DependentUpon>userForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regisForm.resx">
+      <DependentUpon>regisForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
